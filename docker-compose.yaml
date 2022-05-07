@@ -63,10 +63,10 @@ x-airflow-common:
     # Additional gcp requirements
 
     GOOGLE_APPLICATION_CREDENTIALS: /.google/credentials/custom-oasis-347308-4b1ff2c9ba9d.json
-    AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT: 'google-cloud-platform://?extra__google_cloud_platform__key_path=/.google/credentials/custom-oasis-347308-4b1ff2c9ba9d.json'
+    AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT: 'google-cloud-platform://?extra__google_cloud_platform__key_path=/.google/credentials/project.json'
 
-    GCP_PROJECT_ID: 'custom-oasis-347308'
-    GCP_GCS_BUCKET: 'dtc_data_lake_custom-oasis-347308'
+    GCP_PROJECT_ID: 'project'
+    GCP_GCS_BUCKET: 'dtc_data_lake_project'
     
     PG_USER: "${PG_USER}"
     PG_PASSWORD: "${PG_PASSWORD}"
